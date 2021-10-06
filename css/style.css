@@ -1,0 +1,119 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buttons {
+  color: #000;
+}
+
+.buttons:hover {
+  background-color: orangered;
+  color: #fff;
+}
+
+/* nav bar */
+.navigationBar {
+  font-size: 14px;
+}
+
+.logo-style {
+  font-family: "Ephesis";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-item:hover {
+  transform: scale(1.03);
+}
+
+/* HERO */
+#hero {
+  background-image: linear-gradient(
+    to left,
+    rgb(228, 74, 74),
+    rgba(187, 133, 33, 0.424)
+  );
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.heroSec {
+  margin-top: 15rem;
+}
+
+/* @media screen and (max-width:800px) {
+    .heroSec{
+        margin-top: 10rem;
+    }
+} */
+
+.fas {
+  font-size: 50px;
+}
+.far {
+  font-size: 50px;
+}
+
+/* Nida css code */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Us Section */
+
+#contact .contact-box {
+  background-color: lightgray;
+  padding: 3rem 3rem 1rem 3rem;
+}
+
+#contact .form-box {
+  width: 500px;
+  height: 300px;
+}
+
+#contact .form-pic img {
+  width: 400px;
+  height: 300px;
+}
+
+/* Footer Section */
+
+#footer {
+  padding-top: 3rem;
+}
+
+#footer .social-icons a {
+  padding-right: 10px;
+  color: #8d8c8c;
+}
+
+#footer .footer-logo img {
+  padding-left: 27rem;
+  justify-content: center;
+}
+
+#footer .copyright p {
+  padding-left: 25rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
