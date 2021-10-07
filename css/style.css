@@ -20,23 +20,32 @@ p {
 }
 
 .buttons {
-  color: #000;
+  color: #b7382d;
 }
 
 .buttons:hover {
-  background-color: orangered;
-  color: #fff;
+  background-color: rgb(255, 72, 0);
+}
+
+.navbar-brand:hover {
+  color: rgb(129, 20, 20);
 }
 
 /* nav bar */
 .navigationBar {
   font-size: 14px;
+  background-color: rgb(31, 29, 29);
+}
+
+ul li .nav-link {
+  color: #fff;
 }
 
 .logo-style {
   font-family: "Ephesis";
   font-weight: bold;
   font-size: 30px;
+  color: #b7382d;
 }
 
 .nav-item:hover {
@@ -44,15 +53,24 @@ p {
 }
 
 /* HERO */
-#hero {
-  background-image: linear-gradient(
-    to left,
-    rgb(228, 74, 74),
-    rgba(187, 133, 33, 0.424)
-  );
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: cover;
+@media only screen and (max-width: 600px) {
+  #hero {
+    background-image: url("../img/hero.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #hero {
+    background-image: url("../img/hero.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+  }
 }
 
 .heroSec {
@@ -65,19 +83,12 @@ p {
     }
 } */
 
-.fas {
+/* .fas {
   font-size: 50px;
 }
 .far {
   font-size: 50px;
-}
-
-/* Nida css code */
-
-* {
-  margin: 0;
-  padding: 0;
-}
+} */
 
 /* Contact Us Section */
 
@@ -107,13 +118,77 @@ p {
   color: #8d8c8c;
 }
 
-#footer .footer-logo img {
+#footer .footer-logo a {
   padding-left: 27rem;
   justify-content: center;
+  color: #b7382d;
 }
 
 #footer .copyright p {
   padding-left: 25rem;
   padding-top: 1rem;
   font-weight: bold;
+}
+
+#activityForm .box {
+  margin: 0 auto;
+  width: 600px;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 2px solid #333;
+}
+
+#activityForm h2 {
+  text-align: center;
+}
+
+#activityForm .btn-create button {
+  padding: 1rem 4rem;
+}
+
+#activityForm label {
+  font-weight: bold;
+}
+
+.buttons1 {
+  background-color: #b7382d;
+}
+
+#activityForm {
+  padding-top: 3rem;
+}
+
+.form-pic {
+  width: 100%;
+  height: auto;
+}
+
+.cardsLand {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.section-text {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  padding: 15px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.image-round {
+  margin: auto;
+  height: 150px;
+  width: 50%;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.custom-icon {
+  color: #fff;
+  size: 2x;
 }

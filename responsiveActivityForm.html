@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Activity Form</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsiveActivityForm.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h4>Activity Group</h4>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</labeL>
+        <input type="text" id="name"class="form-control" required placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Description</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter description" style="background-color: #eee;"></textarea>
+    </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select Activity</label>
+        <select class="form-control" id="exampleFormControlSelect1" style="background-color: #eee;">
+          <option>Run</option>
+          <option>Bicycle</option>
+          <option>Ride</option>
+          <option>Swim</option>
+          <option>Walk</option>
+          <option>Hike</option>
+        </select>
+      </div>
+      
+      
+        
+          <div class="form-group">
+            <label for="duration">Duration(hours):</label>
+            <input type="number" id="duration" name="duration" min="1" max="12" required>
+          </div>
+        
+
+        
+        <div class="form-group">
+          <label for="datee">Date:</label>
+          <input type="date" id="datee" required>
+        </div>
+      
+    
+
+  <button type="submit" class="btn mb-2">Create</button>
+    </form>
+  </div>
+    </body>
+</html>

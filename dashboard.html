@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitrack</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <!-- Sidebar -->
+    <input type="checkbox" name="" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <a class="navbar-brand logo-style" href="#">fitrack</a>
+                <div class="brand-icons">
+                    <!-- <span class="las la-bell"></span> -->
+                    <span class="las la-user-circle"></span>
+                </div>
+            </div>
+        </div>    
+
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+            <img src="img/user.jpg" placeholder="image">
+            <div>
+                <h3>John Doe</h3>
+                <span>johndoe@gmail.com</span>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <div class="menu-block">
+                <div class="menu-head">
+                    
+                </div>
+                <ul>
+                    <li><a href="index.html">
+                        <span class="la la-home"></span>
+                        Home
+                    </a></li>
+                    <li><a href="responsiveActivityForm.html">
+                        <span class="la la-plus"></span>
+                        Add New Activity
+                    </a></li>
+                    <!-- <li><a href="">
+                        <span class="la la-water"></span>
+                        Water Tracker
+                    </a></li> -->
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+
+        <div class="main-content">
+            <header>
+                <div class="menu-toggle">
+                    <label for="sidebar-toggle">
+                <span class="las la-bars"></span>
+            </label>
+            </div>
+                    <!-- <div class="header-icons">
+                        <span class="las la-search"></span>
+                        <span class="las la-search"></span>
+                        <span class="las la-search"></span>
+                    </div> -->
+               
+            </header>
+            <main>
+                <div class="page-header">
+                    <div>
+                        <h1> Dashboard </h1>
+                        
+                    </div>
+
+                    <div class="header-actions">
+                       <a href="responsiveActivityForm.html">
+                        <button>
+                            <span class="las la-plus"></span>
+                            
+                            Add New Activity
+                        </button>
+                    </a>
+                        <!-- <button>
+                            <span class="las la-file-export"></span>
+                            Export 
+                        </button> -->
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card-single">
+                        <div class="card-flex">
+                            <div class="card-info">
+                                <div class="card-head">
+                                    <span>
+                                        Remaining Activities:
+                                    </span>
+                                </div>
+                                <h2>3</h2>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card-single">
+                        <div class="card-flex">
+                            <div class="card-info">
+                                <div class="card-head">
+                                    <span>
+                                        Completed Activities:
+                                    </span>
+                                </div>
+                                <h2>8</h2>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card-single">
+                        <div class="card-flex">
+                            <div class="card-info">
+                                <div class="card-head">
+                                    <span>
+                                        Total Activities:
+                                    </span>
+                                </div>
+                                <h2>11</h2>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second row of cards -->
+                <div class="heading">
+                <h2>Current Activites</h2>
+            </div>
+
+                <div class="cards-two">
+                    <div class="card-single">
+                        <div class="card-flex">
+                            <div class="card-info">
+                                <div class="card-head">
+                                    <span>
+                                        Running:
+                                    </span>
+                                </div>
+                                <h2>2 hours</h2>
+                                <div class="progress-bar">
+                                    <progress id="prog" value="32" max="100"> 32% </progress>
+
+                                </div>
+
+                            </div>
+                            <div class="card-chart">
+                                <a href="#" class="las la-edit"> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-single">
+                        <div class="card-flex">
+                            <div class="card-info">
+                                <div class="card-head">
+                                    <span>
+                                        Cycling:
+                                    </span>
+                                </div>
+                                <h2>1 hour</h2>
+                                <div class="progress-bar">
+                                    <progress id="prog" value="100" max="100"> 32% </progress>
+
+                                </div>
+
+                            </div>
+                            <div class="card-chart">
+                                <a href="#" class="las la-edit"> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-single">
+                        <div class="card-flex">
+                            <div class="card-info">
+                                <div class="card-head">
+                                    <span>
+                                        Swimming
+                                    </span>
+                                </div>
+                                <h2>1 hour</h2>
+                                <div class="progress-bar">
+                                    <progress id="prog" value="60" max="100"> 32% </progress>
+
+                                </div>
+
+                            </div>
+                            <div class="card-chart">
+                              <a href="#" class="las la-edit"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-box">
+                    <h3>Your Weekly Report</h3>
+                <div class="wrapper">
+                    
+                    <canvas id="myChart" width="500" height="500"></canvas>
+                </div>
+                   </div>
+            </main>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
