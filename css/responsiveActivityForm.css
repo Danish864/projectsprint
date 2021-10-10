@@ -1,45 +1,56 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	background: #f6f5f7;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: 20px 0;
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 20px 0;
 }
 
-.container{
+.container {
   margin-top: 2rem;
 }
 
 button {
-	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 button:active {
-	transform: scale(0.95);
+  transform: scale(0.95);
 }
 
-input, input[type=text] {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
+input,
+input[type="text"] {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.logo-style {
+  font-family: "Ephesis";
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 110;
+  color: #b7382d;
 }
